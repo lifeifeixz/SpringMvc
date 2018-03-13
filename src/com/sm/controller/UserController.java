@@ -1,0 +1,15 @@
+package com.sm.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller("userController")
+@RequestMapping("/userController")
+public class UserController {
+	
+	@RequestMapping("/login")
+	public String login(){
+		System.out.println("login");
+		return "main";
+	}
+}
